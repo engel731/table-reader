@@ -1,4 +1,6 @@
 <?php     
+    namespace TableReader;
+    
     class GridReader extends TableReader 
     {
         protected $_config;

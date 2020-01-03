@@ -1,12 +1,20 @@
 {
     "name": "tanguy/table-reader",
+    "description": "Bibliothèque faite maison pour le transcripteur de tableau Excel configurable",
+    "type": "library",
+    
     "authors": [
         {
-            "name": "Tanguy",
+            "name": "Tanguy Bazire",
             "email": "tanguy731@hotmail.fr"
         }
     ],
+    
     "require": {
         "phpoffice/phpspreadsheet": "1.9.*"
+    },
+
+    "autoload": {
+        "psr-4": { "TableReader\\": "lib/" }
     }
 }

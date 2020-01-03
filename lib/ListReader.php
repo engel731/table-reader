@@ -1,4 +1,6 @@
 <?php     
+    namespace TableReader;
+    
     class ListReader extends TableReader 
     {
         protected $_config;

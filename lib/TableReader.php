@@ -1,4 +1,6 @@
 <?php 
+    namespace TableReader;
+    
     use PhpOffice\PhpSpreadsheet\IOFactory;
 
     abstract class TableReader

@@ -1,4 +1,6 @@
 <?php     
+    namespace TableReader;
+    
     use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
 
     class ReadFilter implements IReadFilter
