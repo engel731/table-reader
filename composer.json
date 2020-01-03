@@ -1,0 +1,12 @@
+{
+    "name": "tangu/table-reader",
+    "authors": [
+        {
+            "name": "Tanguy",
+            "email": "tanguy731@hotmail.fr"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "1.9.*"
+    }
+}
