@@ -15,6 +15,9 @@
     },
 
     "autoload": {
-        "psr-4": { "TableReader\\": "lib/" }
+        "psr-4": { 
+            "TableReader\\": "lib/",
+            "TableReader\\Config\\": "lib/config/"
+        }
     }
 }

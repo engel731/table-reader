@@ -1,5 +1,5 @@
 <?php    
-    namespace TableReader;
+    namespace TableReader\Config;
     
     class CharRange 
     {
