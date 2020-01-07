@@ -3,7 +3,7 @@
     
     class CharRange 
     {
-        private function convert_to_numb($str) { //Max ZZ
+        private static function convert_to_numb($str) { //Max ZZ
             $str_len = strlen($str) - 1;  
             
             $alphabet = range('A', 'Z');
@@ -19,7 +19,7 @@
             return $number += ($key + 1);
         }
         
-        private function convert_to_char($num) { //Max 702 
+        private static function convert_to_char($num) { //Max 702 
             $num -= 1; 
 
             $alphabet = range('A', 'Z');
@@ -36,17 +36,17 @@
             }
         }
 
-        private function convert_range_to_char($range) {
+        private static function convert_range_to_char($range) {
             return array_map(function($numb) { 
-                return $this->convert_to_char($numb); 
+                return self::convert_to_char($numb); 
             }, $range);
         }
 
         public static function char_range($start, $end) {
-            $start_numb = $this->convert_to_numb($start);
-            $end_numb = $this->convert_to_numb($end);
+            $start_numb = self::convert_to_numb($start);
+            $end_numb = self::convert_to_numb($end);
 
             $range_numb = range($start_numb, $end_numb);
-            return $this->convert_range_to_char($range_numb);
+            return self::convert_range_to_char($range_numb);
         }
     }
